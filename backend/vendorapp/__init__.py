@@ -1,0 +1,8 @@
+# vendorapp/apps.py
+from django.apps import AppConfig
+
+class VendorappConfig(AppConfig):
+    name = 'vendorapp'
+
+    def ready(self):
+        import vendorapp.signals
